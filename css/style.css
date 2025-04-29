@@ -245,3 +245,145 @@ textarea {
   }
 }
 
+/*
+AQUÍ COMIENZA EL PROYECTO
+*/
+:root {
+  --bg-blue: #515DEF;
+  --color-black: #333333;
+  --color-grey: #909090;
+  --color-white: #FBFBFB;
+  --font-primary: "Poppins", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-blue);
+  font-family: var(--font-primary);
+  background-image: url(../img/Mask\ Group@2x.jpg);
+  background-position: top right;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header.main-header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: flex;
+  align-items: center;
+  gap: 148px;
+  margin-bottom: 40px;
+}
+
+nav.main-menu{
+  width: 100%;
+}
+
+nav.main-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  list-style: none;
+  color: white;
+}
+
+nav.main-menu ul li:last-child {
+ margin-left: auto;
+}
+
+nav.main-menu ul li:last-child a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--bg-blue); 
+}
+
+nav.main-menu ul li:last-child a:hover {
+  color: var(--bg-blue);
+  background-color: var(--color-white);
+  text-decoration: none;
+}
+
+nav.main-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+
+}
+
+nav.main-menu a:hover {
+  text-decoration: underline;
+}
+
+section.hero {
+  width: 55%;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.hero__initial {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hero__title {
+  font-size: 60px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hero__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-black);
+  display: inline-flex;
+  align-items: center;
+}
+
+section.categories {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 30px 110px;
+  transform: translateX(-150px);
+}
+
+.category__icon {
+  width: 50px;
+}
+
+.category__title {
+  font-size: 16px;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+.category__description {
+  font-weight: 300;
+  color: var(--color-grey);
+  font-size: 16px;
+}
